@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Artifact Generator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mermaid/9.3.0/mermaid.min.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Enhanced Artifact Generator</h1>
+    <div class="input-section">
+      <textarea id="artifactInput" placeholder="Enter your content here..."></textarea>
+      <select id="artifactType">
+        <option value="code">Code</option>
+        <option value="markdown">Markdown</option>
+        <option value="svg">SVG</option>
+        <option value="mermaid">Mermaid</option>
+        <option value="react">React</option>
+        <option value="html">HTML</option>
+      </select>
+      <button id="generateBtn">Generate Artifact</button>
+    </div>
+    <div class="output-section">
+      <div id="artifactPanel" class="artifact-panel">
+        <div id="artifactContent"></div>
+        <div class="artifact-controls">
+          <div class="version-control">
+            <button id="prevVersion">&lt;</button>
+            <span id="versionInfo">Version 1 of 1</span>
+            <button id="nextVersion">&gt;</button>
+          </div>
+          <div class="action-buttons">
+            <button id="copyBtn">Copy</button>
+            <button id="downloadBtn">Download</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.12/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/9.3.0/mermaid.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>

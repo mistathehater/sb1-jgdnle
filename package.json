@@ -1,0 +1,20 @@
+{
+  "name": "enhanced-artifact-generator",
+  "version": "1.0.0",
+  "description": "Generate visual artifacts from various content types",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node check-deps.js && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "highlight.js": "^11.7.0",
+    "marked": "^4.0.12",
+    "mermaid": "^9.3.0"
+  },
+  "devDependencies": {
+    "vite": "^4.3.5"
+  }
+}

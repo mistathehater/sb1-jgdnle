@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.input-section {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+select, button {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.output-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.artifact-panel {
+  flex: 1;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+#artifactContent {
+  padding: 20px;
+  white-space: pre-wrap;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  line-height: 1.4;
+  overflow-x: auto;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.artifact-controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ddd;
+}
+
+.version-control {
+  display: flex;
+  align-items: center;
+}
+
+.version-control button {
+  background-color: transparent;
+  color: #333;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+.version-control span {
+  margin: 0 10px;
+}
+
+.action-buttons button {
+  margin-left: 10px;
+}
+
+/* Specific styles for different artifact types */
+.markdown-content {
+  font-family: Arial, sans-serif;
+}
+
+.svg-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mermaid-content {
+  text-align: center;
+}
+
+.react-content {
+  padding: 20px;
+}
+
+.html-content {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
